@@ -4,6 +4,9 @@
 SAVEIFS=$IFS
 IFS=$(echo -en "\n\b")
 
+# Change Directory to the Path of the Script
+cd $(cd "$(dirname "$0")";pwd)
+
 # Work Path
 echo Please input folder path:
 read 'WORK_PATH'
